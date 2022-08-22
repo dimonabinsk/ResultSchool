@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,500;0,700;1,400;1,500&display=swap");
+
+/* setting */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Mulish', sans-serif;
+	font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (1200 - 320)));
+}
+
+body {
+	background-color: rgb(229, 248, 223);
+}
+
+a {
+	text-decoration: none;
+	color: black;
+	transition: color 0.3s ease;
+}
+
+a:hover {
+	color: blue;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding-left: calc(10px + (20 - 10) * ((100vw - 320px) / (1200 - 320)));
+	padding-right: calc(10px + (20 - 10) * ((100vw - 320px) / (1200 - 320)));
+}
+
+.bd-wrap {
+	border: 2px #000 solid;
+	border-radius: 10px;
+}
+
+.section {
+	margin: 40px auto;
+}
+
+.title {
+	font-weight: 700;
+	font-size: calc(24px + (32 - 24) * ((100vw - 320px) / (1200 - 320)));
+	line-height: calc(48px + (64 - 48) * ((100vw - 320px) / (1200 - 320)));
+	text-align: center;
+}
+
+/* main */
+.main {
+	margin-top: 0;
+}
+
+.main-txt {
+	font-size: calc(16px + (24 - 16) * ((100vw - 320px) / (1200 - 320)));
+	font-weight: 600;
+}
+
+.main-title {
+	font-weight: 700;
+	font-size: calc(36px + (40 - 36) * ((100vw - 320px) / (1200 - 320)));
+	line-height: calc(72px + (80 - 72) * ((100vw - 320px) / (1200 - 320)));
+
+}
+
+.main-wrap {
+	display: flex;
+	max-height: 600px;
+	overflow: hidden;
+}
+
+.main-img-wrap {
+	flex: 1;
+	margin-right: calc(5px + (10 - 5) * ((100vw - 320px) / (1200 - 320)));
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.main-img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: 50% 20%;
+}
+
+.main-desc-wrap {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	flex: 1;
+	margin-left: calc(5px + (10 - 5) * ((100vw - 320px) / (1200 - 320)));
+	padding: 20px 10px;
+	overflow-y: auto;
+}
+
+.main-desc-wrap::-webkit-scrollbar {
+	width: 4px;
+}
+
+.main-desc-wrap::-webkit-scrollbar-thumb {
+	background-color: black;
+}
+
+.main-desc:first-child {
+	margin-bottom: 10px;
+}
+
+.main-desc:last-child {
+	margin-top: 10px;
+}
+
+.main-desc:not(:first-child):not(:last-child) {
+	margin: 10px 0;
+}
+
+/* tuition */
+
+.tuition-wrap {
+	padding: 20px 10px;
+}
+
+.tuition-list li + li {
+	margin: 10px 0;
+}
+
+.tuition-list {
+	padding-left: 25px;
+}
+
+
+/* schedule */
+
+
+.schedule-wrap {
+	padding: 20px;
+}
+
+.schedule-table {
+	width: 50%;
+	margin: 0 auto;
+}
+
+/* Стили таблицы (table) */
+.table {
+	width: 100%;
+	text-align: start;
+}
+
+.table td {
+	padding: 7px 5px;
+	line-height: 10px;
+	vertical-align: middle;
+
+}
+
+.table tr:hover {
+	background-color: #f9fafb
+}
+
+/* courses */
+
+.courses-wrap {
+	padding: 20px;
+}
+
+/* Стили таблицы (courses-table) */
+.courses-table {
+	margin-top: 20px;
+	width: 100%;
+	text-align: center;
+}
+
+.courses-table td,
+.courses-table th {
+	padding: 10px 5px;
+	line-height: 14px;
+	vertical-align: middle;
+}
+
+.courses-table th {
+	border-bottom: 1px solid #000000;
+}
+
+/* contact list */
+
+.list-link {
+	list-style: none;
+	display: flex;
+	padding: 20px;
+	justify-content: space-around;
+}
+
+.list-link li {
+	text-align: center;
+}
+
+
+.item-img {
+	margin: 0 auto 10px;
+	width: calc(30px + (50 - 30) * ((100vw - 320px) / (1200 - 320)));
+	height: calc(30px + (50 - 30) * ((100vw - 320px) / (1200 - 320)));
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	transition: transform 0.3s ease;
+}
+
+.item-img:hover {
+	transform: scale(1.2);
+}
+
+.telegram {
+	background-image: url(https://cdn-icons-png.flaticon.com/512/2111/2111644.png);
+}
+
+.instagram {
+	background-image: url(https://cdn-icons-png.flaticon.com/512/174/174855.png);
+}
+
+.vk {
+	background-image: url(https://cdn-icons.flaticon.com/png/512/3984/premium/3984240.png?token=exp=1656763944~hmac=a02b8bba28464a1e3ba1e8330e0f0bda);
+}
+
+.git {
+	background-image: url(https://cdn-icons-png.flaticon.com/512/270/270798.png);
+}
+
+
+/* media screen */
+
+@media screen and (max-width: 640px) {
+	.main-wrap {
+		flex-direction: column;
+	}
+}
+
+
+@media screen and (max-width: 420px) {
+	.main-title {
+		font-size: calc(30px + (34 - 30) * ((100vw - 320px) / (1200 - 320)));
+	}
+
+	.main-img-wrap {
+		margin-right: 0;
+		margin-bottom: 10px;
+	}
+
+	.main-desc-wrap {
+		margin-left: 0;
+		margin-top: 10px;
+	}
+
+	.title {
+		font-size: calc(22px + (30 - 22) * ((100vw - 320px) / (1200 - 320)));
+		line-height: calc(44px + (60 - 44) * ((100vw - 320px) / (1200 - 320)));
+	}
+
+	.schedule-table {
+		width: 70%;
+
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.main-title {
+		line-height: 32px;
+		margin-bottom: 20px;
+	}
+
+	.schedule-table {
+		width: 100%;
+
+	}
+}
