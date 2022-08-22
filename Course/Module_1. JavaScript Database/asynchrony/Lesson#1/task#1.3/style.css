@@ -1,0 +1,40 @@
+:root {
+	--text-shadow-color: rgba(255, 255, 255, 0.5);
+	--comment-background: #DAD2CA;
+	--text-color: #444;
+}
+
+body {
+	padding: 20px;
+}
+
+#data-container {
+	counter-reset: li;
+	list-style: none;
+	font: 14px "Trebuchet MS", "Lucida Sans";
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0;
+	text-shadow: 0 1px 0 var(--text-shadow-color);
+}
+
+#data-container h3 {
+	display: block;
+	width: 100%;
+	padding: .4em;
+	margin: .5em 0;
+	background: var(--comment-background);
+	color: var(--text-color);
+	text-decoration: none;
+	font-size: 1.5em;
+	border-radius: .3em;
+}
+
+.photo-item {
+	max-width: 600px;
+	display: block;
+}
+.photo-item img {
+	border-radius: 10px;
+}

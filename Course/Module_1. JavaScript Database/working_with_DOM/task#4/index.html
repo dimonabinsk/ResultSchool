@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="index.css"/>
+	<title>Работа с DOM task#4</title>
+	<script defer src="script.js"></script>
+</head>
+<body>
+<div class="main-navigation">
+	<a
+			class="main-navigation__button-item"
+			href="#tasks_today"
+			data-button-id="1"
+	>
+		Задачи на Сегодня
+	</a>
+	<a
+			class="main-navigation__button-item"
+			href="#tasks_week"
+			data-button-id="2"
+	>
+		Задачи на Эту Неделю
+	</a>
+	<a
+			class="main-navigation__button-item"
+			href="#tasks_later"
+			data-button-id="3"
+	>
+		Задачи на Потом
+	</a>
+</div>
+<div id="tasks">
+	<div class="tasks__wrapper">
+		<form class="create-task-block">
+			<input
+					name="taskName"
+					class="create-task-block__input default-text-input"
+					type="text"
+					placeholder="Создайте новую задачу"
+					value="Посмотреть урок по JavaScript"
+			>
+			<button
+					type="submit"
+					class="create-task-block__button default-button"
+			>
+				Создать
+			</button>
+		</form>
+		<div class="tasks-list"></div>
+	</div>
+</div>
+<!-- modal-overlay_hidden -->
+<!--<div class="modal-overlay modal-overlay_hidden">-->
+<!--	<div class="delete-modal">-->
+<!--		<h3 class="delete-modal__question">-->
+<!--			Вы действительно хотите удалить эту задачу?-->
+<!--		</h3>-->
+<!--		<div class="delete-modal__buttons">-->
+<!--			<button class="delete-modal__button delete-modal__cancel-button">-->
+<!--				Отмена-->
+<!--			</button>-->
+<!--			<button class="delete-modal__button delete-modal__confirm-button">-->
+<!--				Удалить-->
+<!--			</button>-->
+<!--		</div>-->
+<!--	</div>-->
+<!--</div>-->
+
+
+<!--<div class="task-item" data-task-id="1659542138423" style="color: rgb(255, 255, 255);">-->
+<!--	<div class="task-item__main-container">-->
+<!--		<div class="task-item__main-content">-->
+<!--			<form class="checkbox-form">-->
+<!--				<input class="checkbox-form__checkbox" type="checkbox" id="1659542138423">-->
+<!--				<label-->
+<!--						for="1659542138423">-->
+<!--				</label>-->
+<!--			</form>-->
+<!--			<span class="task-item__text">Посмотреть урок по JavaScript</span></div>-->
+<!--		<button class="task-item__delete-button default-button delete-button" data-delete-task-id="1659542138423"-->
+<!--				style="border: 1px solid rgb(255, 255, 255);">Удалить-->
+<!--		</button>-->
+<!--	</div>-->
+<!--</div>-->
+
+</body>
+</html>
