@@ -1,6 +1,4 @@
-import './style.css'
-import {render} from "./src/App.js";
+import "./style.css";
+import { render } from "./src/App.js";
 
 render();
-
-
